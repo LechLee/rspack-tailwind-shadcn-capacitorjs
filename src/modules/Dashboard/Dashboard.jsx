@@ -22,7 +22,7 @@ import { Search } from '@/components/search'
 import { ThemeCustomizer } from '@/components/theme/theme-customizer'
 import { ThemeSwitcher } from '@/components/theme/theme-switcher'
 
-export function Component() {
+export default function Component() {
 	const sidebarState = localStorage.getItem('sidebar:state') === 'true'
 
 	return (

@@ -1,11 +1,10 @@
-import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar'
+import { Sidebar, SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar'
 import { Command, Send } from 'lucide-react'
 import * as React from 'react'
 import { Link } from 'react-router'
 
 import { NavMain } from '@/components/nav-sidebar/nav-main'
 import { NavSecondary } from '@/components/nav-sidebar/nav-secondary'
-import { NavUser } from '@/components/nav-sidebar/nav-user'
 import { useNavMenu } from '@/hooks/query/user-menu'
 
 const navSecondary = [
@@ -43,9 +42,6 @@ export function AppSidebar({ ...props }) {
 				<NavMain items={menus} />
 				<NavSecondary items={navSecondary} className="mt-auto" />
 			</SidebarContent>
-			<SidebarFooter>
-				<NavUser />
-			</SidebarFooter>
 		</Sidebar>
 	)
 }

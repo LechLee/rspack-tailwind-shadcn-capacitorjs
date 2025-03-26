@@ -75,10 +75,10 @@ export function Search({ ...props }) {
 					<CommandEmpty>No results found.</CommandEmpty>
 					<CommandGroup heading="Links">
 						<CommandItem
-							value={pkg.repository.url}
-							onSelect={() => {
-								runCommand(() => navigate(pkg.repository.url))
-							}}
+						// value={pkg.repository.url}
+						// onSelect={() => {
+						// 	runCommand(() => navigate(pkg.repository.url))
+						// }}
 						>
 							<Icons.gitHub className="mr-2 size-4" />
 							GitHub
