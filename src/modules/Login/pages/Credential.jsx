@@ -12,7 +12,7 @@ export default function Component() {
 		navigate('/dashboard') // Navigate to /dashboard on click
 	}
 	return (
-		<div className="min-h-screen flex items-center justify-center bg-gray-100">
+		<div className="min-h-screen flex items-center justify-center">
 			<div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
 				{/* Sign In Title */}
 				<h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Sign In</h2>

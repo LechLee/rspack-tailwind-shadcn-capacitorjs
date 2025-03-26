@@ -23,5 +23,10 @@ export default defineConfig({
 				type: 'css'
 			}
 		]
+	},
+	html: {
+		meta: {
+			viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover'
+		}
 	}
 })
