@@ -51,17 +51,6 @@ export const menus = [
 				label: '128',
 				icon: Gauge,
 				to: '/dashboard/overview'
-			},
-			{
-				title: 'analysis',
-				label: '9',
-				icon: ChartNoAxesCombined,
-				to: '/dashboard/analysis'
-			},
-			{
-				title: 'workplace',
-				icon: Orbit,
-				to: '/dashboard/workplace'
 			}
 		]
 	},
@@ -76,16 +65,6 @@ export const menus = [
 				label: '23',
 				icon: ArchiveX,
 				to: '/form/basic-form'
-			},
-			{
-				title: 'step_form',
-				icon: Trash2,
-				to: '/form/step-form'
-			},
-			{
-				title: 'advanced_form',
-				icon: Archive,
-				to: '/form/advanced-form'
 			}
 		]
 	},
@@ -99,11 +78,6 @@ export const menus = [
 				label: '128',
 				icon: List,
 				to: '/list/data-table'
-			},
-			{
-				title: 'pro_table',
-				icon: TableProperties,
-				to: '/list/pro-table'
 			},
 			{
 				title: 'table_list',

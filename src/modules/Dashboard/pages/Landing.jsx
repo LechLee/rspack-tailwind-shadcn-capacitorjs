@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
-import { Overview } from '@/modules/Dashboard/components/Overview'
+// import { Overview } from '@/modules/Dashboard/components/Overview'
 import { RecentSales } from '@/modules/Dashboard/components/RecentSales'
 
 export default function Component() {
@@ -110,14 +110,14 @@ export default function Component() {
 					</Card>
 				</div>
 				<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-					<Card className="col-span-4">
+					{/* <Card className="col-span-4">
 						<CardHeader>
 							<CardTitle>Overview</CardTitle>
 						</CardHeader>
 						<CardContent className="pl-2">
 							<Overview />
 						</CardContent>
-					</Card>
+					</Card> */}
 					<Card className="col-span-3">
 						<CardHeader>
 							<CardTitle>Recent Sales</CardTitle>

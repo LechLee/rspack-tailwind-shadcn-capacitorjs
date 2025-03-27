@@ -100,9 +100,6 @@ export default function Component() {
 					</div>
 
 					{/* Sign In Button */}
-					{/* <button type="submit" className="w-full bg-orange-500 text-white py-2 rounded-full hover:bg-orange-600 transition duration-200">
-						Sign In
-					</button> */}
 					<Button onClick={onClickSignIn} className="w-full bg-orange-500 text-white py-2 rounded-full hover:bg-orange-600 transition duration-200">
 						Sign In
 					</Button>

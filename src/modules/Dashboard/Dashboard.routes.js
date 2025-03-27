@@ -17,11 +17,11 @@ const pages = [
 			{
 				uuid: generateUUID(),
 				path: '', // Empty path for the default route under /login
-				element: <Navigate to="landing" replace /> // Redirect to /login/credential
+				element: <Navigate to="overview" replace /> // Redirect to /login/credential
 			},
 			{
 				uuid: generateUUID(),
-				path: 'landing',
+				path: 'overview',
 				component: lazy(() =>
 					import(
 						/* webpackChunkName: "Landing.page" */
