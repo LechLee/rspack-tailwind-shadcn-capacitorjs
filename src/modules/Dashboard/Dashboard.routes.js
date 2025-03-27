@@ -6,13 +6,7 @@ const pages = [
 	{
 		uuid: generateUUID(),
 		path: '/dashboard',
-		component: lazy(() =>
-			import(
-				/* webpackChunkName: "Dashboard.page" */
-				/* webpackMode: "lazy" */
-				`./Dashboard`
-			)
-		),
+		component: lazy(() => import(`./Dashboard`)),
 		children: [
 			{
 				uuid: generateUUID(),
@@ -22,13 +16,7 @@ const pages = [
 			{
 				uuid: generateUUID(),
 				path: 'overview',
-				component: lazy(() =>
-					import(
-						/* webpackChunkName: "Landing.page" */
-						/* webpackMode: "lazy" */
-						`./pages/Landing`
-					)
-				)
+				component: lazy(() => import(`./pages/Landing`))
 			}
 		]
 	}

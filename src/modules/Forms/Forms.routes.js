@@ -5,18 +5,18 @@ import { Navigate } from 'react-router'
 const pages = [
 	{
 		uuid: generateUUID(),
-		path: '/login',
-		component: lazy(() => import(`./Login.module`)),
+		path: '/forms',
+		component: lazy(() => import(`./Forms`)),
 		children: [
 			{
 				uuid: generateUUID(),
 				path: '', // Empty path for the default route under /login
-				element: <Navigate to="credential" replace /> // Redirect to /login/credential
+				element: <Navigate to="basic-form" replace /> // Redirect to /login/credential
 			},
 			{
 				uuid: generateUUID(),
-				path: 'credential',
-				component: lazy(() => import(`./pages/Credential`))
+				path: 'basic-form',
+				component: lazy(() => import(`./pages/BasicForm`))
 			}
 		]
 	}

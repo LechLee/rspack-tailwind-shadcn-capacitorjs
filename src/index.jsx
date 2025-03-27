@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
 import loginRoutes from './modules/Login/Login.routes'
 import dashboardRoutes from './modules/Dashboard/Dashboard.routes'
+import formsRoutes from './modules/Forms/Forms.routes'
+import tableRoutes from './modules/Table/Table.routes'
 import App from './App'
-import { c } from 'ofetch/dist/shared/ofetch.d0b3d489'
 
-const allRoutes = [...dashboardRoutes, ...loginRoutes].map((route) => ({
+const modules = [...dashboardRoutes, ...loginRoutes, ...formsRoutes, ...tableRoutes]
+const allRoutes = modules.map((route) => ({
 	path: route.path,
 	element: <route.component />,
 	children: (() => {

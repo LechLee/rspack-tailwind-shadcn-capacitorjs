@@ -58,39 +58,39 @@ export const menus = [
 		title: 'forms',
 		label: '12',
 		icon: MessagesSquare,
-		to: '/form',
+		to: '/forms',
 		children: [
 			{
 				title: 'basic_form',
 				label: '23',
 				icon: ArchiveX,
-				to: '/form/basic-form'
+				to: '/forms/basic-form'
 			}
 		]
 	},
 	{
 		title: 'table',
-		to: '/list',
+		to: '/table',
 		icon: Table,
 		children: [
 			{
 				title: 'data_table',
 				label: '128',
 				icon: List,
-				to: '/list/data-table'
+				to: '/table/data-table'
 			},
 			{
 				title: 'table_list',
 				label: '972',
 				icon: TableProperties,
-				to: '/list/table-list'
-			},
-			{
-				title: 'card_list',
-				label: '8',
-				icon: ListTree,
-				to: '/list/card-list'
+				to: '/table/table-list'
 			}
+			// {
+			// 	title: 'card_list',
+			// 	label: '8',
+			// 	icon: ListTree,
+			// 	to: '/table/card-list'
+			// }
 		]
 	},
 	{
@@ -152,4 +152,4 @@ export const menus = [
 			}
 		]
 	}
-] as const
+]
