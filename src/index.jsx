@@ -4,6 +4,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
 import loginRoutes from './modules/Login/Login.routes'
 import dashboardRoutes from './modules/Dashboard/Dashboard.routes'
 import App from './App'
+import { c } from 'ofetch/dist/shared/ofetch.d0b3d489'
 
 const allRoutes = [...dashboardRoutes, ...loginRoutes].map((route) => ({
 	path: route.path,
@@ -33,8 +34,8 @@ const routes = [
 		]
 	}
 ]
-
-const router = createBrowserRouter(routes)
+const basename = process.env.basename || ''
+const router = createBrowserRouter(routes, { basename })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>

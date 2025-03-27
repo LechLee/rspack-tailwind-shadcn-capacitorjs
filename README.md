@@ -125,3 +125,6 @@ npx cap run android --target=Pixel_9_Pro_XL_API_36 --host=10.1.14.212 --port=300
 ├── components.json   # shadcn/ui configuration
 └── rsbuild.config.mjs # Rsbuild configuration
 ```
+
+## Acknowledgements
+[shadcnui-boilerplate](https://github.com/TinsFox/shadcnui-boilerplate) by TinsFox.

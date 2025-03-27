@@ -7,16 +7,15 @@ const require = createRequire(import.meta.url)
 const packageJson = require('./package.json')
 
 export default defineConfig({
-	// source: {
-	// 	exclude: [
-	// 		join(process.cwd(), 'ios'), // Targets './ios' at root
-	// 		join(process.cwd(), 'android') // Targets './android' at root
-	// 	]
-	// },
+	source: {
+		define: {
+			'process.env.basename': process.env.NODE_ENV === 'production' ? JSON.stringify(`/${packageJson.name}`) : JSON.stringify('')
+		}
+	},
 	output: {
-		assetPrefix: `/${packageJson.name}/`, // e.g., '/my-rsbuild-project/'
+		assetPrefix: `/${packageJson.name}/`,
 		distPath: {
-			root: 'dist' // Default, no need to change unless desired
+			root: 'dist'
 		}
 	},
 	resolve: {
