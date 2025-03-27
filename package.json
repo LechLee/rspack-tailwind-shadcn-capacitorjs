@@ -8,6 +8,14 @@
     "dev": "rsbuild dev --open",
     "preview": "rsbuild preview"
   },
+  "keywords": [
+    "capacitor",
+    "react",
+    "tailwindcss",
+    "rsbuild",
+    "shadcn",
+    "rspack"
+  ],
   "dependencies": {
     "@capacitor/android": "^7.1.0",
     "@capacitor/core": "^7.1.0",
