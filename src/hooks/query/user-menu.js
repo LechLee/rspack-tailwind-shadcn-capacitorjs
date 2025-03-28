@@ -92,64 +92,64 @@ export const menus = [
 			// 	to: '/table/card-list'
 			// }
 		]
-	},
-	{
-		title: 'charts',
-		icon: ChartLine,
-		to: '/charts',
-		children: [
-			{
-				title: 'area_chart',
-				icon: ChartArea,
-				to: '/charts/area-chart'
-			},
-			{
-				title: 'bar_chart',
-				icon: ChartBar,
-				to: '/charts/bar-chart'
-			},
-			{
-				title: 'line_chart',
-				icon: ChartLine,
-				to: '/charts/line-chart'
-			},
-			{
-				title: 'pie_chart',
-				icon: ChartPie,
-				to: '/charts/pie-chart'
-			},
-			{
-				title: 'radar_chart',
-				icon: Radar,
-				to: '/charts/radar-chart'
-			},
-			{
-				title: 'radial_chart',
-				icon: Radical,
-				to: '/charts/radial-chart'
-			},
-			{
-				title: 'tooltip_chart',
-				icon: CircleDot,
-				to: '/charts/tooltip'
-			}
-		]
-	},
-	{
-		title: 'settings',
-		icon: Settings,
-		to: '/settings'
-	},
-	{
-		title: 'system',
-		icon: Info,
-		to: '/system',
-		children: [
-			{
-				title: 'about',
-				icon: Info,
-				to: '/system/about'
-			}
-		]
 	}
+	// {
+	// 	title: 'charts',
+	// 	icon: ChartLine,
+	// 	to: '/charts',
+	// 	children: [
+	// 		{
+	// 			title: 'area_chart',
+	// 			icon: ChartArea,
+	// 			to: '/charts/area-chart'
+	// 		},
+	// 		{
+	// 			title: 'bar_chart',
+	// 			icon: ChartBar,
+	// 			to: '/charts/bar-chart'
+	// 		},
+	// 		{
+	// 			title: 'line_chart',
+	// 			icon: ChartLine,
+	// 			to: '/charts/line-chart'
+	// 		},
+	// 		{
+	// 			title: 'pie_chart',
+	// 			icon: ChartPie,
+	// 			to: '/charts/pie-chart'
+	// 		},
+	// 		{
+	// 			title: 'radar_chart',
+	// 			icon: Radar,
+	// 			to: '/charts/radar-chart'
+	// 		},
+	// 		{
+	// 			title: 'radial_chart',
+	// 			icon: Radical,
+	// 			to: '/charts/radial-chart'
+	// 		},
+	// 		{
+	// 			title: 'tooltip_chart',
+	// 			icon: CircleDot,
+	// 			to: '/charts/tooltip'
+	// 		}
+	// 	]
+	// },
+	// {
+	// 	title: 'settings',
+	// 	icon: Settings,
+	// 	to: '/settings'
+	// },
+	// {
+	// 	title: 'system',
+	// 	icon: Info,
+	// 	to: '/system',
+	// 	children: [
+	// 		{
+	// 			title: 'about',
+	// 			icon: Info,
+	// 			to: '/system/about'
+	// 		}
+	// 	]
+	// }
 ]

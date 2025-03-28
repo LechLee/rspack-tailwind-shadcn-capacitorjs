@@ -26,7 +26,7 @@ export default function Component() {
 	const sidebarState = localStorage.getItem('sidebar:state') === 'true'
 
 	return (
-		<SidebarProvider defaultOpen={sidebarState} storage="local">
+		<SidebarProvider defaultOpen={sidebarState ? sidebarState : true} storage="local">
 			<AppSidebar />
 			<SidebarInset className="w-full overflow-hidden">
 				<div className="sticky top-0 z-10">
